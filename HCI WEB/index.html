@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localia - Community Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Localia Logo" class="logo-img">
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="marketplace.html" class="nav-link">Marketplace</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="auth.html" class="nav-link btn-primary">Get Started</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero hero-banner-bg">
+        <div class="container">
+            <div class="hero-image-placeholder"></div>
+            
+            <div class="hero-content hero-text-overlay">
+                <h1 class="hero-title">Connect. Trade. Thrive.</h1>
+                <p>Localia is a community-powered marketplace where students, residents, and local sellers can easily trade items or offer services. By keeping exchanges local, we minimize waste, reduce carbon footprints, and strengthen community support systems.</p>
+                <div class="hero-buttons" style="margin-top: 2rem;"> 
+                    <a href="auth.html" class="btn btn-primary">Join Localia</a>
+                    <a href="marketplace.html" class="btn btn-secondary">Browse Marketplace</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Use Localia?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon" style="background-color: var(--primary-green);">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 17.5l6-6 4 4 8-8"/></svg>
+                    </div>
+                    <h3>Sustainable Choices</h3>
+                    <p>Promote responsible consumption by giving items a second life.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background-color: var(--accent-orange);">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Local & Convenient</h3>
+                    <p>Discover nearby listings and services without long shipping times or extra fees.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background-color: var(--primary-green);">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <h3>Real-Time Messaging</h3>
+                    <p>Chat directly with sellers or buyers to negotiate deals and coordinate meetups.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon" style="background-color: var(--accent-orange);">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 22s-8-4-8-10V5l8-3 8 3v7c0 6-8 10-8 10z"/><path d="M12 17V12"/><path d="M12 12L12 7"/></svg>
+                    </div>
+                    <h3>Safe & Verified</h3>
+                    <p>All users have profiles stored securely, helping create a trusted community space.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Featured Categories</h2>
+            <div class="features-grid">
+            <div class="feature-card" style="background-color: var(--white); text-align: center;">
+                <img src="Pre-loved Clothes.jpg" alt="Pre-loved Clothes" style="width: 32px; height: 32px; margin-bottom: 0.5rem;">
+                <h3 style="margin-bottom: 0;">Pre-loved Clothes</h3>
+            </div>
+
+            <div class="feature-card" style="background-color: var(--white); text-align: center;">
+                <img src="Furnitures & Home Finds.jpg" alt="Furniture & Home Finds" style="width: 32px; height: 32px; margin-bottom: 0.5rem;">
+                <h3 style="margin-bottom: 0;">Furniture & Home Finds</h3>
+            </div>
+
+            <div class="feature-card" style="background-color: var(--white); text-align: center;">
+                <img src="Electronics.png" alt="Electronics" style="width: 32px; height: 32px; margin-bottom: 0.5rem;">
+                <h3 style="margin-bottom: 0;">Electronics</h3>
+            </div>
+
+            <div class="feature-card" style="background-color: var(--white); text-align: center;">
+                <img src="School Supplies.jpg" alt="School Supplies" style="width: 32px; height: 32px; margin-bottom: 0.5rem;">
+                <h3 style="margin-bottom: 0;">School Supplies</h3>
+            </div>
+
+            <div class="feature-card" style="background-color: var(--white); text-align: center;">
+                <img src="Local Services.jpg" alt="Local Services" style="width: 32px; height: 32px; margin-bottom: 0.5rem;">
+                <h3 style="margin-bottom: 0;">Local Services</h3>
+            </div>
+
+            <div class="feature-card" style="background-color: var(--white); text-align: center;">
+                <img src="Crafts.jpg" alt="Handmade Crafts" style="width: 32px; height: 32px; margin-bottom: 0.5rem;">
+                <h3 style="margin-bottom: 0;">Handmade Crafts</h3>
+            </div>
+
+            <div class="feature-card" style="background-color: var(--white); text-align: center;">
+                <img src="Books & Study Materials.jpg" alt="Books & Study Materials" style="width: 32px; height: 32px; margin-bottom: 0.5rem;">
+                <h3 style="margin-bottom: 0;">Books & Study Materials</h3>
+            </div>
+
+            <div class="feature-card" style="background-color: var(--white); text-align: center;">
+                <img src="Hobby Items.jpg" alt="Hobby Items" style="width: 32px; height: 32px; margin-bottom: 0.5rem;">
+                <h3 style="margin-bottom: 0;">Hobby Items</h3>
+            </div>
+        </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Sponsors & Partnerships</h2>
+            <p class="section-subtitle">These partners help us maintain trust, promote safe trading, and encourage responsible consumption across communities.</p>
+            
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="feature-card carousel-item">
+                        <div class="feature-icon" style="background-color: var(--light-beige);">
+                            <img src="EcoCycle.png" alt="EcoCycle PH Logo">
+                        </div>
+                        <h3>EcoCycle PH</h3>
+                        <p>A local recycling and upcycling shop promoting waste reduction.</p>
+                    </div>
+                    <div class="feature-card carousel-item">
+                        <div class="feature-icon" style="background-color: var(--light-beige);">
+                            <img src="Campus Thrift.png" alt="Campus Thrift Hub Logo">
+                        </div>
+                        <h3>Campus Thrift Hub</h3>
+                        <p>A student-run booth for pre-loved items.</p>
+                    </div>
+                    <div class="feature-card carousel-item">
+                        <div class="feature-icon" style="background-color: var(--light-beige);">
+                            <img src="GreenHome.png" alt="GreenHome Collective Logo">
+                        </div>
+                        <h3>GreenHome Collective</h3>
+                        <p>Sellers of sustainable home essentials.</p>
+                    </div>
+
+                    <div class="feature-card carousel-item">
+                        <div class="feature-icon" style="background-color: var(--light-beige);">
+                            <img src="Barangay Connect.png" alt="Barangay Connect Program Logo">
+                        </div>
+                        <h3>Barangay Connect Program</h3>
+                        <p>Helps verify local sellers and promote safe community trading.</p>
+                    </div>
+                    <div class="feature-card carousel-item">
+                        <div class="feature-icon" style="background-color: var(--light-beige);">
+                            <img src="UniLife Dormitory.png" alt="UniLife Dormitory Network Logo">
+                        </div>
+                        <h3>UniLife Dormitory Network</h3>
+                        <p>Assists dorm residents in posting and exchanging items easily.</p>
+                    </div>
+                    <div class="feature-card carousel-item">
+                        <div class="feature-icon" style="background-color: var(--light-beige);">
+                            <img src="LocalSkills.png" alt="LocalSkills PH Logo">
+                        </div>
+                        <h3>LocalSkills PH</h3>
+                        <p>A service-based community that connects skilled workers to nearby clients.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section class="how-it-works" style="background-color: var(--white);">
+        <div class="container">
+            <h2 class="section-title">What Our Community Says</h2>
+
+            <div class="carousel-container review-carousel">
+                <div class="carousel-track">
+
+                    <div class="feature-card" style="text-align: left;">
+                        <blockquote style="font-style: italic;">
+                            “Localia helped me furnish my dorm room without spending too much!”
+                        </blockquote>
+                        <p style="font-weight: 600; margin-top: 1rem;">— Jasmine, Student</p>
+                    </div>
+
+                    <div class="feature-card" style="text-align: left;">
+                        <blockquote style="font-style: italic;">
+                            “Posting my repair services here doubled my weekend clients.”
+                        </blockquote>
+                        <p style="font-weight: 600; margin-top: 1rem;">— Marco, Local Resident</p>
+                    </div>
+
+                    <div class="feature-card" style="text-align: left;">
+                        <blockquote style="font-style: italic;">
+                            “Finally, a simple and safe way to trade within our area!”
+                        </blockquote>
+                        <p style="font-weight: 600; margin-top: 1rem;">— Aileen, Seller</p>
+                    </div>
+
+                    <div class="feature-card" style="text-align: left;">
+                        <blockquote style="font-style: italic;">
+                            “I appreciate the focus on local trade—it made meeting up so easy.”
+                        </blockquote>
+                        <p style="font-weight: 600; margin-top: 1rem;">— David, Buyer</p>
+                    </div>
+
+                    <div class="feature-card" style="text-align: left;">
+                        <blockquote style="font-style: italic;">
+                            “A great platform to give my old textbooks a new life!”
+                        </blockquote>
+                        <p style="font-weight: 600; margin-top: 1rem;">— Sarah, Graduate</p>
+                    </div>
+
+                    <div class="feature-card" style="text-align: left;">
+                        <blockquote style="font-style: italic;">
+                            “The chat feature is quick and secure. Highly recommend.”
+                        </blockquote>
+                        <p style="font-weight: 600; margin-top: 1rem;">— Ben, Community Member</p>
+                    </div>
+
+                </div> 
+            </div> 
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Join Your Local Community?</h2>
+            <p>Start buying, selling, and connecting with neighbors today.</p>
+            <a href="auth.html" class="btn btn-primary btn-large">Get Started Free</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo.png" alt="Localia Logo" class="footer-logo">
+                    <p>Building sustainable communities through local trade and connection.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="marketplace.html">Marketplace</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="auth.html">Sign In</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety Tips</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Localia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

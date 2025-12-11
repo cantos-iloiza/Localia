@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - Localia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Localia Logo" class="logo-img">
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="marketplace.html" class="nav-link active">Marketplace</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="profile.html" class="nav-link">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="marketplace-header">
+        <div class="container">
+            <h1>Browse Marketplace</h1>
+            <p>Discover items and services in your local community</p>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" class="form-input search-input" id="searchInput" placeholder="Search for items or services...">
+                <button class="btn btn-primary">Search</button>
+            </div>
+            <div class="filter-bar">
+                <select class="form-select filter-select" id="categoryFilter">
+                    <option value="all">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="furniture">Furniture</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="books">Books</option>
+                    <option value="services">Services</option>
+                    <option value="other">Other</option>
+                </select>
+                <select class="form-select filter-select" id="priceFilter">
+                    <option value="all">All Prices</option>
+                    <option value="0-50">$0 - $50</option>
+                    <option value="50-100">$50 - $100</option>
+                    <option value="100-200">$100 - $200</option>
+                    <option value="200+">$200+</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="marketplace-content">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab active" data-tab="items">Items</button>
+                <button class="tab" data-tab="services">Services</button>
+            </div>
+
+            <div class="tab-content active" id="items">
+                <div class="add-listing-btn-container">
+                    <button class="btn btn-accent" id="addItemBtn">+ Post an Item</button>
+                </div>
+                <div class="items-grid" id="itemsGrid">
+                    <div class="card item-card">
+                        <img src="macbook.jpg" alt="Laptop" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">MacBook Pro 2019</h3>
+                            <p class="card-price">$450</p>
+                            <p class="card-description">Excellent condition, 16GB RAM, 256GB SSD. Perfect for students.</p>
+                            <div class="card-meta">
+                                <span class="card-location">📍 Downtown</span>
+                                <span class="card-time">2 hours ago</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="card item-card">
+                        <img src="desk.jpg" alt="Desk" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Wooden Study Desk</h3>
+                            <p class="card-price">$80</p>
+                            <p class="card-description">Solid wood desk with drawers. Great for home office setup.</p>
+                            <div class="card-meta">
+                                <span class="card-location">📍 Northside</span>
+                                <span class="card-time">5 hours ago</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="card item-card">
+                        <img src="bike.jpg" alt="Bike" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Mountain Bike</h3>
+                            <p class="card-price">$200</p>
+                            <p class="card-description">21-speed mountain bike, well-maintained, ready to ride.</p>
+                            <div class="card-meta">
+                                <span class="card-location">📍 Westside</span>
+                                <span class="card-time">1 day ago</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="card item-card">
+                        <img src="books.jpg" alt="Books" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Textbook Bundle</h3>
+                            <p class="card-price">$60</p>
+                            <p class="card-description">Psychology 101 textbooks. Minimal highlighting.</p>
+                            <div class="card-meta">
+                                <span class="card-location">📍 Campus Area</span>
+                                <span class="card-time">3 days ago</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="card item-card">
+                        <img src="plant.jpg" alt="Indoor Plants" class="card-image"> 
+                        <div class="card-content">
+                            <h3 class="card-title">Indoor Monstera Plant</h3>
+                            <p class="card-price">$25</p>
+                            <p class="card-description">Healthy potted Monstera, 2 feet tall. Pot included. Great for dorms.</p>
+                            <div class="card-meta">
+                                <span class="card-location">📍 Southside</span>
+                                <span class="card-time">4 hours ago</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="card item-card">
+                        <img src="shoes.jpg" alt="Sneakers" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Nike Air Max (Size 10)</h3>
+                            <p class="card-price">$60</p>
+                            <p class="card-description">Barely used, original box included. Selling because wrong size.</p>
+                            <div class="card-meta">
+                                <span class="card-location">📍 Downtown</span>
+                                <span class="card-time">1 day ago</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="card item-card">
+                        <img src="monitor.jpg" alt="Monitor" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">24" Dell Monitor</h3>
+                            <p class="card-price">$90</p>
+                            <p class="card-description">1080p HDMI monitor. No scratches. Power cable included.</p>
+                            <div class="card-meta">
+                                <span class="card-location">📍 Campus Area</span>
+                                <span class="card-time">6 hours ago</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="card item-card">
+                        <img src="coffee.jpeg" alt="Coffee Maker" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Single Serve Coffee Maker</h3>
+                            <p class="card-price">$30</p>
+                            <p class="card-description">Compact coffee machine, works perfectly. Includes reusable filter pod.</p>
+                            <div class="card-meta">
+                                <span class="card-location">📍 Westside</span>
+                                <span class="card-time">10 hours ago</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="card item-card">
+                        <img src="boardgames.jpeg" alt="Board Games" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Board Game Collection</h3>
+                            <p class="card-price">$20</p>
+                            <p class="card-description">Bundle includes Catan, Monopoly, and Uno. All pieces accounted for.</p>
+                            <div class="card-meta">
+                                <span class="card-location">📍 Downtown</span>
+                                <span class="card-time">2 days ago</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="services">
+                <div class="add-listing-btn-container">
+                    <button class="btn btn-accent" id="addServiceBtn">+ Offer a Service</button>
+                </div>
+                <div class="services-grid">
+                    <div class="card service-card">
+                        <div class="card-content">
+                            <h3 class="card-title">Tutoring: Math & Science</h3>
+                            <p class="card-price">$25/hour</p>
+                            <p class="card-description">Experienced tutor available for high school and college level math and science subjects.</p>
+                            <div class="service-tags">
+                                <span class="tag">Education</span>
+                                <span class="tag">Academic</span>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-location">📍 All Areas</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">Contact</button>
+                        </div>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="card-content">
+                            <h3 class="card-title">Dog Walking</h3>
+                            <p class="card-price">$15/walk</p>
+                            <p class="card-description">Reliable and experienced dog walker. Available weekdays and weekends.</p>
+                            <div class="service-tags">
+                                <span class="tag">Pet Care</span>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-location">📍 Downtown & Nearby</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">Contact</button>
+                        </div>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="card-content">
+                            <h3 class="card-title">Graphic Design</h3>
+                            <p class="card-price">$40/hour</p>
+                            <p class="card-description">Professional graphic designer offering logo design, flyers, and social media graphics.</p>
+                            <div class="service-tags">
+                                <span class="tag">Design</span>
+                                <span class="tag">Creative</span>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-location">📍 Remote/Online</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">Contact</button>
+                        </div>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="card-content">
+                            <h3 class="card-title">House Cleaning</h3>
+                            <p class="card-price">$30/hour</p>
+                            <p class="card-description">Thorough and trustworthy cleaning service for homes and apartments.</p>
+                            <div class="service-tags">
+                                <span class="tag">Home Services</span>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-location">📍 Central & South</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">Contact</button>
+                        </div>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="card-content">
+                            <h3 class="card-title">Computer Repair & Setup</h3>
+                            <p class="card-price">$35/job</p>
+                            <p class="card-description">I fix slow laptops, remove viruses, and help install software for students.</p>
+                            <div class="service-tags">
+                                <span class="tag">Tech Support</span>
+                                <span class="tag">Repairs</span>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-location">📍 Campus / Remote</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">Contact</button>
+                        </div>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="card-content">
+                            <h3 class="card-title">Lawn Mowing & Gardening</h3>
+                            <p class="card-price">$40/visit</p>
+                            <p class="card-description">General yard maintenance, mowing, and watering. I bring my own tools.</p>
+                            <div class="service-tags">
+                                <span class="tag">Home Services</span>
+                                <span class="tag">Outdoors</span>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-location">📍 Northside</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">Contact</button>
+                        </div>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="card-content">
+                            <h3 class="card-title">Portrait Photography</h3>
+                            <p class="card-price">$50/session</p>
+                            <p class="card-description">Affordable headshots for LinkedIn or creative portraits for social media.</p>
+                            <div class="service-tags">
+                                <span class="tag">Creative</span>
+                                <span class="tag">Photography</span>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-location">📍 All Areas</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">Contact</button>
+                        </div>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="card-content">
+                            <h3 class="card-title">Moving Help</h3>
+                            <p class="card-price">$20/hour</p>
+                            <p class="card-description">Strong student available to help move boxes and furniture for dorms or apartments.</p>
+                            <div class="service-tags">
+                                <span class="tag">Labor</span>
+                                <span class="tag">Moving</span>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-location">📍 Campus Area</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">Contact</button>
+                        </div>
+                    </div>
+
+                    <div class="card service-card">
+                        <div class="card-content">
+                            <h3 class="card-title">Guitar Lessons</h3>
+                            <p class="card-price">$25/hour</p>
+                            <p class="card-description">Beginner to intermediate guitar lessons. Acoustic or electric. I can come to you.</p>
+                            <div class="service-tags">
+                                <span class="tag">Music</span>
+                                <span class="tag">Education</span>
+                            </div>
+                            <div class="card-meta">
+                                <span class="card-location">📍 Central City</span>
+                            </div>
+                            <button class="btn btn-primary btn-block">Contact</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal" id="addItemModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Post an Item</h2>
+            <form class="listing-form" id="itemForm">
+                <div class="form-group">
+                    <label class="form-label" for="itemName">Item Name</label>
+                    <input type="text" class="form-input" id="itemName" placeholder="E.g., Laptop, Desk, Bike" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="itemPrice">Price ($)</label>
+                    <input type="number" class="form-input" id="itemPrice" placeholder="50" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="itemCategory">Category</label>
+                    <select class="form-select" id="itemCategory" required>
+                        <option value="">Select category</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="books">Books</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="itemCondition">Condition</label>
+                    <select class="form-select" id="itemCondition" required>
+                        <option value="">Select condition</option>
+                        <option value="new">New</option>
+                        <option value="like-new">Like New</option>
+                        <option value="good">Good</option>
+                        <option value="fair">Fair</option>
+                        <option value="used">Used</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="itemDescription">Description</label>
+                    <textarea class="form-textarea" id="itemDescription" placeholder="Describe your item..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="itemImage">Upload Image (optional)</label>
+                    <input type="file" class="form-input" id="itemImage" accept="image/*">
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Post Item</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="addServiceModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Offer a Service</h2>
+            <form class="listing-form" id="serviceForm">
+                <div class="form-group">
+                    <label class="form-label" for="serviceName">Service Name</label>
+                    <input type="text" class="form-input" id="serviceName" placeholder="E.g., Tutoring, Dog Walking" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="serviceRate">Rate ($/hour)</label>
+                    <input type="number" class="form-input" id="serviceRate" placeholder="25" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="serviceCategory">Category</label>
+                    <select class="form-select" id="serviceCategory" required>
+                        <option value="">Select category</option>
+                        <option value="education">Education</option>
+                        <option value="pet-care">Pet Care</option>
+                        <option value="home-services">Home Services</option>
+                        <option value="creative">Creative</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="serviceDescription">Description</label>
+                    <textarea class="form-textarea" id="serviceDescription" placeholder="Describe your service..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Post Service</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo.png" alt="Localia Logo" class="footer-logo">
+                    <p>Building sustainable communities through local trade and connection.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="marketplace.html">Marketplace</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="auth.html">Sign In</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety Tips</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Localia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="itemDetailsModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="itemModalContent">
+                </div>
+            <hr style="margin: 1.5rem 0; border: 0; border-top: 1px solid #eee;">
+            
+            <div class="seller-info" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                <div style="width: 50px; height: 50px; background: #6B8E23; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">JD</div>
+                <div>
+                    <h4 style="margin: 0;">Listed by Jane Doe</h4>
+                    <p style="margin: 0; font-size: 0.9rem; color: #666;">Member since 2023 • ⭐ 4.9 Rating</p>
+                </div>
+            </div>
+
+            <button class="btn btn-primary btn-block" onclick="alert('Message sent to seller!')">Message Seller</button>
+        </div>
+    </div>
+
+    <div class="modal" id="serviceDetailsModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="serviceModalContent">
+                </div>
+            <hr style="margin: 1.5rem 0; border: 0; border-top: 1px solid #eee;">
+
+            <div class="provider-info" style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                <div style="width: 50px; height: 50px; background: #C96445; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">SP</div>
+                <div>
+                    <h4 style="margin: 0;">Service Pro: Mike Smith</h4>
+                    <p style="margin: 0; font-size: 0.9rem; color: #666;">Verified Professional • 50+ Jobs Done</p>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 10px;">
+                <button class="btn btn-primary" style="flex: 1;" onclick="alert('Calling service provider...')">Call Now</button>
+                <button class="btn btn-secondary" style="flex: 1;" onclick="alert('Message sent!')">Chat</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

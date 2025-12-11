@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Localia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Localia Logo" class="logo-img">
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="marketplace.html" class="nav-link">Marketplace</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="auth.html" class="nav-link active">Sign In</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+
+                <div class="auth-box" id="loginBox">
+                    <h2>Welcome Back!</h2>
+                    <p class="auth-subtitle">Sign in to continue to Localia</p>
+                    <form class="auth-form" id="loginForm">
+                        <div class="form-group">
+                            <label class="form-label" for="loginEmail">Email Address</label>
+                            <input type="email" class="form-input" id="loginEmail" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="loginPassword">Password</label>
+                            <input type="password" class="form-input" id="loginPassword" placeholder="Enter your password" required>
+                        </div>
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                        <div class="auth-divider">
+                            <span>OR</span>
+                        </div>
+                        <button type="button" class="btn btn-social btn-block">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                            </svg>
+                            Continue with Google
+                        </button>
+                    </form>
+                    <p class="auth-toggle">Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+                </div>
+
+                <div class="auth-box" id="signupBox" style="display: none;">
+                    <h2>Join Localia</h2>
+                    <p class="auth-subtitle">Create your account to start trading locally</p>
+                    <form class="auth-form" id="signupForm">
+                        <div class="form-group">
+                            <label class="form-label" for="signupName">Full Name</label>
+                            <input type="text" class="form-input" id="signupName" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="signupEmail">Email Address</label>
+                            <input type="email" class="form-input" id="signupEmail" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="signupPassword">Password</label>
+                            <input type="password" class="form-input" id="signupPassword" placeholder="Minimum 8 characters" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="signupLocation">Location (City)</label>
+                            <input type="text" class="form-input" id="signupLocation" placeholder="Your city" required>
+                        </div>
+                        <div class="form-group form-checkbox" style="display: flex; align-items: center;">
+                            <input type="checkbox" id="agreeTerms" required style="margin-right: 8px;">
+                            <label for="agreeTerms" style="font-size: 0.85rem; white-space: nowrap; margin-bottom: 0;">
+                                I agree to the 
+                                <a href="#" id="termsLink" style="color: #0066cc; text-decoration: underline; font-weight: bold;">Terms of Service</a> 
+                                and 
+                                <a href="#" id="privacyLink" style="color: #0066cc; text-decoration: underline; font-weight: bold;">Privacy Policy</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                        <div class="auth-divider">
+                            <span>OR</span>
+                        </div>
+                        <button type="button" class="btn btn-social btn-block">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                            </svg>
+                            Sign up with Google
+                        </button>
+                    </form>
+                    <p class="auth-toggle">Already have an account? <a href="#" id="showLogin">Sign in</a></p>
+                </div>
+
+                <div class="auth-image">
+                    <h3>Start Your Local Trading Journey</h3>
+                    <ul class="auth-benefits">
+                        <li>✓ <strong>Find Hidden Gems:</strong> Score deals on textbooks, furniture, and vintage finds nearby.</li>
+                        <li>✓ <strong>Turn Clutter into Cash:</strong> Easily sell items you no longer need to neighbors.</li>
+                        <li>✓ <strong>Skip the Shipping:</strong> Save money and time with easy local meetups.</li>
+                        <li>✓ <strong>Hire Verified Services:</strong> Connect with verified service professionals in your area.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="logo.png" alt="Localia Logo" class="footer-logo">
+                    <p>Building sustainable communities through local trade and connection.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="marketplace.html">Marketplace</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="auth.html">Sign In</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety Tips</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Localia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+<div class="modal" id="termsModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Terms of Service</h2>
+            <div class="modal-body" style="max-height: 60vh; overflow-y: auto; text-align: left; line-height: 1.6;">
+                <p><strong>Effective Date:</strong> January 1, 2025</p>
+                <p><strong>1. Introduction</strong><br>Welcome to Localia. By accessing our website, you agree to comply with these Terms. Localia is a community-driven marketplace designed to facilitate local trading.</p>
+                <p><strong>2. Eligibility</strong><br>You must provide accurate information (Name, Email, Location) during registration and maintain the security of your account credentials.</p>
+                <p><strong>3. User Conduct</strong><br>You agree NOT to post illegal items, harass other users, or use the platform for fraud. We promote responsible consumption and community connection.</p>
+                <p><strong>4. Buying & Selling</strong><br>Localia is a venue. We do not own items listed or employ service providers. Transactions are solely between buyer and seller. Meetups are at your own risk.</p>
+                <p><strong>5. Termination</strong><br>We reserve the right to terminate accounts that violate these terms or harm the community.</p>
+            </div>
+            <button class="btn btn-primary btn-block" style="margin-top: 1rem;" onclick="document.getElementById('termsModal').classList.remove('active')">I Understand</button>
+        </div>
+    </div>
+
+    <div class="modal" id="privacyModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Privacy Policy</h2>
+            <div class="modal-body" style="max-height: 60vh; overflow-y: auto; text-align: left; line-height: 1.6;">
+                <p><strong>Effective Date:</strong> January 1, 2025</p>
+                <p><strong>1. Information We Collect</strong><br>We collect your Name, Email, Location, and Listing Data to facilitate trades and secure the platform.</p>
+                <p><strong>2. How We Use Information</strong><br>Your location and listings are displayed publicly to help buyers find you. We use your email for notifications regarding your account.</p>
+                <p><strong>3. Sharing</strong><br>We do not sell your data. Your profile info (Bio, Name) is visible to other users to build trust.</p>
+                <p><strong>4. Your Rights</strong><br>You can edit your profile, manage listings, or update notification preferences in your Settings tab at any time.</p>
+            </div>
+            <button class="btn btn-primary btn-block" style="margin-top: 1rem;" onclick="document.getElementById('privacyModal').classList.remove('active')">I Understand</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
